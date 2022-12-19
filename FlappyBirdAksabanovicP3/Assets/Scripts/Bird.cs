@@ -37,5 +37,6 @@ public class Bird : MonoBehaviour
         rb2d.velocity = Vector2.zero;
         isDead = true;
         anim.SetTrigger("Dead");
+        GameControl.instance.BirdDied();
     }
 }
